@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WebView Interact</string>
+
+    <string name="webview_safe_exec_script">javascript:(function(){try{%s}catch(err){}})();</string>
+</resources>

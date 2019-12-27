@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script>
+        function testLocalStorage() {
+            window.localStorage.setItem('testKey', 'testValue');
+
+            alert(window.localStorage.getItem('testKey') + " = testValue ");
+        }
+
+        function testSessionStorage() {
+            window.sessionStorage.setItem('testKey', 'testValue');
+
+            alert(window.localStorage.getItem('testKey') + " = testValue ");
+        }
+
+        function onResume() {
+            alert("onResume");
+        }
+
+        function onPause() {
+            alert("onPause");
+        }
+    </script>
+</head>
+<body>
+<input type="button" id="button1" onclick="testLocalStorage();" value="localStorage 테스트"/><br/>
+<input type="button" id="button2" onclick="testSessionStorage();" value="sessionStorage 테스트"/><br/>
+</body>
+</html>
